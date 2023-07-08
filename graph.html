@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <style>
+            body {
+                background-color: #20323d;
+            }
+
+            #Horizontal_line {
+                transform: translateY(47%);
+                animation: Horizontal_lineA 5s infinite;
+                /* transform: translateY(41%); */
+            }
+
+            @keyframes Horizontal_lineA {
+
+                from,
+                20% {
+                    transform: translateY(47%);
+                }
+
+                40%,
+                60% {
+                    transform: translateY(0%);
+                }
+
+                80%,
+                100% {
+                    transform: translateY(41%);
+                }
+            }
+
+            #Horizontal_label {
+                transform: translateY(46%);
+                animation: Horizontal_labelA 5s infinite;
+                /* transform: translateY(40%); */
+            }
+
+            @keyframes Horizontal_labelA {
+
+                from,
+                20% {
+                    transform: translateY(46%);
+                }
+
+                40%,
+                60% {
+                    transform: translateY(0%);
+                }
+
+                80%,
+                100% {
+                    transform: translateY(40%);
+                }
+            }
+
+            #Vertical_line {
+                transform: translate(-64%, 15%);
+                animation: Vertical_lineA 5s infinite;
+            }
+
+            @keyframes Vertical_lineA {
+                from {
+                    transform: translate(-64%, 15%);
+                }
+
+                20%,
+                40% {
+                    transform: translate(-50%, 15%);
+                }
+
+                60% {
+                    transform: translate(-0%, 15%);
+                }
+
+                100% {
+                    transform: translate(-0%, 15%);
+                }
+            }
+
+            #Vertical_label {
+                transform: translateX(-62%);
+                animation: Vertical_labelA 5s infinite;
+                /* transform: translateX(-0%); */
+            }
+
+            @keyframes Vertical_labelA {
+                from {
+                    transform: translateX(-62%);
+                }
+
+                20%,
+                40% {
+                    transform: translateX(-50%);
+                }
+
+                60% {
+                    transform: translateX(-0%);
+                }
+
+                100% {
+                    transform: translateX(-0%);
+                }
+            }
+
+            #pointer {
+                /* transform: translate(-00%, 00%); */
+                transform: translate(-64%, 7%);
+                animation: PointerA 5s infinite;
+            }
+
+            @keyframes PointerA {
+                from {
+                    transform: translate(-64%, 7%);
+                }
+
+                20% {
+                    transform: translate(-50%, 7%);
+                }
+
+                40% {
+                    transform: translate(-50%, -40%);
+                }
+
+                60% {
+                    transform: translate(-00%, -40%);
+                }
+
+                80% {
+                    transform: translate(-00%, -00%);
+                }
+
+                100% {
+                    transform: translate(-00%, -00%);
+                }
+            }
+
+            #Dot1 {
+                opacity: 0;
+                animation: Dot1A 5s infinite;
+            }
+
+            @keyframes Dot1A {
+
+                from,
+                40% {
+                    opacity: 0;
+                }
+
+                45%,
+                100% {
+                    opacity: 1;
+                }
+            }
+
+            #Dot2 {
+                opacity: 0;
+                animation: Dot2A 5s infinite;
+            }
+
+            @keyframes Dot2A {
+
+                from,
+                60% {
+                    opacity: 0;
+                }
+
+                65%,
+                100% {
+                    opacity: 1;
+                }
+            }
+
+            #Dot3 {
+                opacity: 0;
+                animation: Dot3A 5s infinite;
+            }
+
+            #Dot4 {
+                opacity: 0;
+                animation: Dot3A 5s infinite;
+            }
+
+            @keyframes Dot3A {
+
+                from,
+                80% {
+                    opacity: 0;
+                }
+
+                85%,
+                100% {
+                    opacity: 1;
+                }
+            }
+
+            #top_line {
+                stroke-dasharray: 200 200;
+                stroke-dashoffset: 200;
+                animation: topLineA 5s infinite;
+            }
+
+            @keyframes topLineA {
+
+                from,
+                40% {
+                    stroke-dashoffset: 200;
+                }
+
+                40% {
+                    stroke-dashoffset: 200;
+                }
+
+                65%,
+                100% {
+                    stroke-dashoffset: 000;
+                }
+            }
+
+            #bottom_line {
+                stroke-dasharray: 200 200;
+                stroke-dashoffset: 00;
+                opacity: 0;
+                animation: BottomLineA 5s infinite;
+            }
+
+            @keyframes BottomLineA {
+
+                from,
+                80% {
+                    opacity: 0;
+                }
+
+                85%,
+                100% {
+                    opacity: 1;
+                }
+            }
+
+            #Yellow_Rec_wrap {
+                transform: translateX(25%);
+            }
+
+            #Yellow_Rec {
+                /* animation: openAnimation 2s infinite; */
+                transform-origin: top;
+                animation: RECA 5s infinite;
+            }
+
+            @keyframes RECA {
+
+                from,
+                60% {
+                    transform: scaleY(0);
+                    opacity: 0;
+                }
+
+                80%,
+                100% {
+                    transform: scaleY(1);
+                    opacity: 1;
+                }
+            }
+        </style>
+        <svg width="320" height="200" viewBox="0 0 320 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="320" height="200" fill="#F5F5F5" />
+            <g id="platform/desktop ">
+                <rect width="7689" height="15467" transform="translate(-3194 -2254)" fill="#1F1F1F" />
+                <g id="Mobile traider ">
+                    <g id="Tools and indicators" clip-path="url(#clip0_0_1)">
+                        <rect width="320" height="200" fill="#2A2A2A" />
+                        <g id="background table">
+                            <g id="horizontal">
+                                <path id="horizontal line" d="M0 200H320" stroke="#383838" stroke-width="0.5" />
+                                <path id="horizontal line_2" d="M0 0H320" stroke="#383838" />
+                                <path id="horizontal line_3" d="M0 40.3201H320" stroke="#383838" stroke-width="0.5" />
+                                <path id="horizontal line_4" d="M0 80.6401H320" stroke="#383838" stroke-width="0.5" />
+                                <path id="horizontal line_5" d="M0 120.96H320" stroke="#383838" stroke-width="0.5" />
+                                <path id="horizontal line_6" d="M0 161.28H320" stroke="#383838" stroke-width="0.5" />
+                            </g>
+                            <g id="vertical">
+                                <path id="vertical_2" d="M0 0V200" stroke="#383838" stroke-width="0.5" />
+                                <path id="vertical_3" d="M80 0V200" stroke="#383838" stroke-width="0.5" />
+                                <path id="vertical_4" d="M160 0V200" stroke="#383838" stroke-width="0.5" />
+                                <path id="vertical_5" d="M240 0V200" stroke="#383838" stroke-width="0.5" />
+                                <path id="vertical_6" d="M320 0V200" stroke="#383838" stroke-width="0.5" />
+                            </g>
+                        </g>
+                        <g id="Vertical">
+                            <path id="Horizontal_line" d="M-1 39H319" stroke="#BABABA" stroke-width="0.5"
+                                stroke-dasharray="6 6" />
+                            <g id="Horizontal_label">
+                                <rect width="43" height="24" transform="translate(276.594 28)" fill="#383838" />
+                                <text id="142.05" fill="#AEAEAE" xml:space="preserve" style="white-space: pre"
+                                    font-family="Poppins" font-size="10" font-weight="500" letter-spacing="0em">
+                                    <tspan x="282.288" y="43.5">160.40</tspan>
+                                </text>
+                            </g>
+                        </g>
+                        <g id="Frame 217">
+                            <path id="Vertical_line" d="M241 -54V200.216" stroke="#BABABA" stroke-width="0.5"
+                                stroke-dasharray="6 6" />
+                            <g id="Vertical_label">
+                                <rect width="77" height="24" transform="translate(202 176)" fill="#383838" />
+                                <text id="May 26, 8 PM" fill="#AEAEAE" xml:space="preserve" style="white-space: pre"
+                                    font-family="Poppins" font-size="10" font-weight="500" letter-spacing="0em">
+                                    <tspan x="208.513" y="191.5">May 27, 5 PM</tspan>
+                                </text>
+                            </g>
+                        </g>
+                        <g id="candles group">
+                            <g id="candle">
+                                <path id="Vector" d="M154.561 90.259V46.8247" stroke="#606060" />
+                                <rect id="Rectangle" x="0.5" y="-0.5" width="2.67517" height="27.2165" rx="1.33758"
+                                    transform="matrix(1 0 0 -1 152.723 81.6504)" fill="#606060" stroke="#606060" />
+                            </g>
+                            <g id="candle_2">
+                                <path id="Vector_2" d="M91.9668 88.8323L91.9668 48.2513" stroke="#606060" />
+                                <rect id="Rectangle_2" x="0.5" y="-0.5" width="2.67517" height="18.3394" rx="1.33758"
+                                    transform="matrix(1 0 0 -1 90.1289 78.3213)" fill="#606060" stroke="#606060" />
+                            </g>
+                            <g id="candle_3">
+                                <path id="Vector_3" d="M117.004 103.918L117.004 73.1657" stroke="#606060" />
+                                <rect id="Rectangle_3" x="0.5" y="-0.5" width="2.67517" height="18.9734" rx="1.33758"
+                                    transform="matrix(1 0 0 -1 115.166 97.2117)" fill="#606060" stroke="#606060" />
+                            </g>
+                            <g id="candle_4">
+                                <path id="Vector_4" d="M41.8906 128.66L41.8906 68.4228" stroke="#606060" />
+                                <rect id="Rectangle_4" x="0.5" y="-0.5" width="2.67517" height="37.3617" rx="1.33758"
+                                    transform="matrix(1 0 0 -1 40.0527 127.66)" fill="#606060" stroke="#606060" />
+                            </g>
+                            <g id="candle_5">
+                                <path id="Vector_5" d="M129.521 107.429L129.521 57.6541" stroke="#606060" />
+                                <rect id="Rectangle_5" x="0.5" y="-0.5" width="2.67517" height="36.7276" rx="1.33758"
+                                    transform="matrix(1 0 0 -1 127.684 106.429)" fill="#606060" stroke="#606060" />
+                            </g>
+                            <g id="candle_6">
+                                <path id="Vector_6" d="M54.4082 121.1V77.9828" stroke="#606060" />
+                                <rect id="Rectangle_6" x="0.5" y="-0.5" width="2.67517" height="26.2653" rx="1.33758"
+                                    transform="matrix(1 0 0 -1 52.5703 104.248)" fill="#606060" stroke="#606060" />
+                            </g>
+                            <g id="candle_7">
+                                <path id="Vector_7" d="M142.041 99.1494L142.041 57.9344" stroke="#606060" />
+                                <rect id="Rectangle_7" x="0.5" y="-0.5" width="2.67517" height="26.2653" rx="1.33758"
+                                    transform="matrix(1 0 0 -1 140.203 89.9062)" fill="#606060" stroke="#606060" />
+                            </g>
+                            <g id="candle_8">
+                                <path id="Vector_8" d="M66.9277 118.185L66.9277 58.8985" stroke="#606060" />
+                                <rect id="Rectangle_8" x="0.5" y="-0.5" width="2.67517" height="21.5098" rx="1.33758"
+                                    transform="matrix(1 0 0 -1 65.0898 88.6514)" fill="#606060" stroke="#606060" />
+                            </g>
+                            <g id="candle_9">
+                                <path id="Vector_9" d="M79.4473 100.734L79.4473 56.3489" stroke="#606060" />
+                                <rect id="Rectangle_9" x="0.5" y="-0.5" width="2.67517" height="33.8743" rx="1.33758"
+                                    transform="matrix(1 0 0 -1 77.6094 90.2234)" fill="#606060" stroke="#606060" />
+                            </g>
+                            <g id="candle_10">
+                                <path id="Vector_10" d="M104.486 125.001V52.082" stroke="#606060" />
+                                <rect id="Rectangle_10" x="0.5" y="-0.5" width="2.67517" height="38.6299" rx="1.33758"
+                                    transform="matrix(1 0 0 -1 102.648 98.9551)" fill="#606060" stroke="#606060" />
+                            </g>
+                            <g id="candle_11">
+                                <path id="Vector_11" d="M278.111 70.2588V26.8245" stroke="#606060" />
+                                <rect id="Rectangle_11" x="0.5" y="-0.5" width="2.67517" height="27.2165" rx="1.33758"
+                                    transform="matrix(1 0 0 -1 276.273 61.6501)" fill="#606060" stroke="#606060" />
+                            </g>
+                            <g id="candle_12">
+                                <path id="Vector_12" d="M215.518 98.832L215.518 58.2511" stroke="#606060" />
+                                <rect id="Rectangle_12" x="0.5" y="-0.5" width="2.67517" height="18.3394" rx="1.33758"
+                                    transform="matrix(1 0 0 -1 213.68 88.321)" fill="#606060" stroke="#606060" />
+                            </g>
+                            <g id="candle_13">
+                                <path id="Vector_13" d="M240.553 93.9185L240.553 63.1657" stroke="#606060" />
+                                <rect id="Rectangle_13" x="0.5" y="-0.5" width="2.67517" height="18.9734" rx="1.33758"
+                                    transform="matrix(1 0 0 -1 238.715 87.2117)" fill="#606060" stroke="#606060" />
+                            </g>
+                            <g id="candle_14">
+                                <path id="Vector_14" d="M165.439 88.6604L165.439 28.423" stroke="#606060" />
+                                <rect id="Rectangle_14" x="0.5" y="-0.5" width="2.67517" height="37.3617" rx="1.33758"
+                                    transform="matrix(1 0 0 -1 163.602 87.6604)" fill="#606060" stroke="#606060" />
+                            </g>
+                            <g id="candle_15">
+                                <path id="Vector_15" d="M253.072 103.429L253.072 53.6541" stroke="#606060" />
+                                <rect id="Rectangle_15" x="0.5" y="-0.5" width="2.67517" height="36.7276" rx="1.33758"
+                                    transform="matrix(1 0 0 -1 251.234 102.429)" fill="#606060" stroke="#606060" />
+                            </g>
+                            <g id="candle_16">
+                                <path id="Vector_16" d="M177.961 100.1V56.9828" stroke="#606060" />
+                                <rect id="Rectangle_16" x="0.5" y="-0.5" width="2.67517" height="26.2653" rx="1.33758"
+                                    transform="matrix(1 0 0 -1 176.123 83.2483)" fill="#606060" stroke="#606060" />
+                            </g>
+                            <g id="candle_17">
+                                <path id="Vector_17" d="M265.592 89.1494L265.592 47.9344" stroke="#606060" />
+                                <rect id="Rectangle_17" x="0.5" y="-0.5" width="2.67517" height="26.2653" rx="1.33758"
+                                    transform="matrix(1 0 0 -1 263.754 79.9062)" fill="#606060" stroke="#606060" />
+                            </g>
+                            <g id="candle_18">
+                                <path id="Vector_18" d="M190.479 118.185L190.479 58.8985" stroke="#606060" />
+                                <rect id="Rectangle_18" x="0.5" y="-0.5" width="2.67517" height="21.5098" rx="1.33758"
+                                    transform="matrix(1 0 0 -1 188.641 88.6514)" fill="#606060" stroke="#606060" />
+                            </g>
+                            <g id="candle_19">
+                                <path id="Vector_19" d="M202.998 110.734L202.998 66.3489" stroke="#606060" />
+                                <rect id="Rectangle_19" x="0.5" y="-0.5" width="2.67517" height="33.8743" rx="1.33758"
+                                    transform="matrix(1 0 0 -1 201.16 100.223)" fill="#606060" stroke="#606060" />
+                            </g>
+                            <g id="candle_20">
+                                <path id="Vector_20" d="M228.035 125.001V52.082" stroke="#606060" />
+                                <rect id="Rectangle_20" x="0.5" y="-0.5" width="2.67517" height="38.6299" rx="1.33758"
+                                    transform="matrix(1 0 0 -1 226.197 98.9551)" fill="#606060" stroke="#606060" />
+                            </g>
+                        </g>
+                        <g id="Group 57">
+
+
+                            <svg width="320" height="280" viewBox="0 0 320 200" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="Yellow_Rec_wrap">
+                                    <path id="Yellow_Rec" d="M0 0.312988H160V81.313H0V0.312988Z" fill="#FFD84E"
+                                        fill-opacity="0.1" />
+                                </g>
+                            </svg>
+
+
+
+                            <path id="top_line" d="M80 40H240" stroke="#FFD84E" stroke-width="2" stroke-miterlimit="10"
+                                stroke-linecap="round" />
+                            <circle id="Dot2" cx="240" cy="40.4973" r="6" fill="#2A2A2A" stroke="#FFD84E"
+                                stroke-width="2" />
+                            <circle id="Dot1" cx="80" cy="40.4973" r="6" fill="#2A2A2A" stroke="#FFD84E"
+                                stroke-width="2" />
+                            <path id="bottom_line" d="M80 121H240" stroke="#FFD84E" stroke-width="2"
+                                stroke-miterlimit="10" stroke-linecap="round" />
+                            <circle id="Dot4" cx="240" cy="120.998" r="6" fill="#2A2A2A" stroke="#FFD84E"
+                                stroke-width="2" />
+                            <circle id="Dot3" cx="80" cy="120.998" r="6" fill="#2A2A2A" stroke="#FFD84E"
+                                stroke-width="2" />
+                            <g id="pointer">
+                                <path id="Vector 118" d="M240.445 107.313V133.313" stroke="white" stroke-width="2" />
+                                <path id="Vector 119" d="M227.445 120.313H253.445" stroke="white" stroke-width="2" />
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <defs>
+                <clipPath id="clip0_0_1">
+                    <rect width="320" height="200" fill="white" />
+                </clipPath>
+            </defs>
+        </svg>
+    </body>
+
+</html>
