@@ -1,54 +1,13 @@
 body {
   background-color: #20323d;
 }
-#list1 {
-  opacity: 1;
-  animation: list1A 15s infinite;
-}
-#list2 {
-  opacity: 1;
-  transform: translateY(21%);
-  animation: list2A 15s infinite;
-}
-#list3 {
-  opacity: 0;
-  transform: translateY(21%);
-  /* animation: list2A 15s infinite; */
-}
 
-@keyframes list1A {
-  from {
-    transform: translateY(0);
-  }
-  15% {
-    transform: translateY(-21%);
-  }
-  16% {
-    opacity: 1;
-  }
-  17% {
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(-21%);
-  }
-}
 
-@keyframes list2A {
-  from {
-    transform: translateY(21);
-  }
-  15% {
-    transform: translateY(0%);
-  }
-  30% {
-    transform: translateY(-21%);
-  }
-  100% {
-    transform: translateY(-21%);
-  }
-}
 
-#details {
-  opacity: 0;
-}
+<script>
+const randomNumber = Math.floor(Math.random() * 1000) + 1;
+const cssLink = document.createElement('link');
+cssLink.rel = 'stylesheet';
+cssLink.href = `dum.css?v=${randomNumber}`;
+document.head.appendChild(cssLink);
+</script>
